@@ -1,5 +1,7 @@
 # The Site Configuration
 
+# 실행 시 bundle exec jekyll serve
+
 # Import the theme
 theme: jekyll-theme-chirpy
 remote_theme: jekyll-theme-chirpy # 배포 시 필요. 지우지 말 것
@@ -17,7 +19,7 @@ timezone: Asia/Seoul
 
 title: heizence.devlog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: 개발 블로그 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
