@@ -2,7 +2,7 @@
 title: JavaScript 런타임 동작방식, 비동기 처리
 description: ""
 date: 2024-04-27 20:23:00 +09:00
-categories: [Language, JavaScript]
+categories: [SW Development / CS, JavaScript]
 tags: [JavaScript, 비동기 처리]
 pin: true
 math: true

@@ -2,7 +2,7 @@
 title: JavaScript 란?
 description: ""
 date: 2024-04-25 22:23:00 +09:00
-categories: [Language, JavaScript]
+categories: [SW Development / CS, JavaScript]
 tags: [JavaScript]
 pin: true
 math: true

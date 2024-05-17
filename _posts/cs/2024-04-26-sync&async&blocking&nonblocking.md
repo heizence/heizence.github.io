@@ -2,7 +2,7 @@
 title: 동기/비동기, 블로킹(blocking)/논블로킹
 description: ""
 date: 2024-04-26 22:23:00 +09:00
-categories: [Computer Science, General]
+categories: [SW Development / CS, General]
 tags: [비동기 처리, 블로킹, 논블로킹]
 pin: true
 math: true

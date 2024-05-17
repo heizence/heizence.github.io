@@ -2,7 +2,7 @@
 title: JavaScript Promise
 description: ""
 date: 2024-05-05 21:00:00 +09:00
-categories: [Language, JavaScript]
+categories: [SW Development / CS, JavaScript]
 tags: [JavaScript, 비동기 처리, Promise]
 pin: true
 math: true

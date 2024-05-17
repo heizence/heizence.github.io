@@ -2,7 +2,7 @@
 title: JavaScript 비동기 처리, 콜백 함수
 description: ""
 date: 2024-05-03 20:00:00 +09:00
-categories: [Language, JavaScript]
+categories: [SW Development / CS, JavaScript]
 tags: [JavaScript, 비동기 처리, 콜백]
 pin: true
 math: true

@@ -2,7 +2,7 @@
 title: JavaScript Async/Await
 description: ""
 date: 2024-05-10 20:43:25 +09:00
-categories: [Language, JavaScript]
+categories: [SW Development / CS, JavaScript]
 tags: [JavaScript, 비동기 처리, Async/Await]
 pin: true
 math: true
