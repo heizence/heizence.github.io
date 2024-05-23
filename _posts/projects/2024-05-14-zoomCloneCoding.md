@@ -13,20 +13,21 @@ mermaid: true
 
 ## **프로젝트 소개**
 
-화상회의 서비스 Zoom 의 기능을 비슷하게 만들어 보는 클론 코딩 프로젝트이다. 모든 기능을 다 구현하지는 않고 핵심적인 기능 위주로 구현하였다.
+화상회의 서비스 Zoom 의 기능을 비슷하게 만들어 보는 클론 코딩 프로젝트이다. 모든 기능을 다 구현하지는 않고 핵심적인 기능 위주로 구현하였다. 서비스 이름은 MeetAnywhere 로 정했다.
 
 실제 Zoom 서비스는 회의실에 수십 명이 입장하여 미디어 정보를 실시간으로 주고받을 수 있으나, 본 프로젝트에서는 회의당 4명 이하의 소규모 인원의 미디어 정보를 처리할 수 있을 정도로만 설계하였다.
 
 <br/>
-**사용한 기술**
-- 클라이언트 : Android(Java)
-- 메인 서버/DB : Php, Apache, Mysql
-- Signaling 서버/채팅 서버 : Node.js, Express, Socket.io
-- 이메일 인증 : Mailgun API
-- 실시간 스트리밍 : WebRTC
+**사용한 기술/플랫폼**
+- Java, Android
+- Node.js, Express, Socket.io, Mysql
+- WebRTC
+- AWS EC2
 
 <br/>
 실시간 스트리밍을 위해 WebRTC 기술을 사용하였다. WebRTC 를 이용한 설계 방식에는 Mesh, SFU, MCU 등 여러 가지가 있고 서비스 규모와 목적에 따라 적절한 방식을 선택할 수 있다. 본 프로젝트에서는 위에서 언급한 대로 소규모로 설계하는 것을 목표로 하였기에 가장 기본적인 Mesh 방식을 이용하여 스트리밍 기능을 구현하였다.
+
+서버의 경우 일반적인 http 요청을 처리하는 메인 서버, WebRTC 연결 시 필요한 signaling 서버, 회의 진행 시 실시간 요청(채팅, 회의 참석, 종료 등)을 처리하는 소켓 서버를 모두 포함한다.
 
 ## **주요 기능**
 
@@ -108,3 +109,10 @@ mermaid: true
 그나마 제대로 된(?) Android 앱을 만들고 나니 우선은 보람이 컸다. WebRTC 기술을 학습하고 적용해 본 것도 충분히 의미있는 경험이었던 것 같다. 다만 야직 Java 나 Android OS 에 익숙하지 않아서 코드가 부실한 게 아쉽긴 하다. 초반에 설계를 했음에도 불구하고 기능이 예상보다 더 복잡해서 코드가 난잡해진 것도 있었다. 다음에는 설계에 시간을 좀 더 사용해야겠다.
 
 WebRTC 를 사용하면서 대규모 사용자 접속을 처리할 수 있는 방식을 고민했었는데 너무 과도하게 욕심내는 것 같아서 소규모 사용자 접속만 처리할 수 있도록 기본적인 Mesh 방식을 채택하여 개발했다. 다음 프로젝트에서는 대규모 사용자 접속을 처리할 수 있는 SFU, MCU 방식을 사용하는 것에 도전해봐야겠다.
+
+## **기타**
+
+#### Github repositories
+
+- [MeetAnywhere-Client](https://github.com/heizence/MeetAnywhere-Client)
+- [MeetAnywhere-Server](https://github.com/heizence/MeetAnywhere-Server)
